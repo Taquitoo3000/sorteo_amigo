@@ -24,4 +24,14 @@ Mientras que los textos a modificar segun la lógica de programación, son la qu
 ```
 
 ## app.js
-En javascript se desarrolla la logica del programa. donde se 
+En javascript se desarrolla la logica del programa. Donde se asignan los elementos HTML por medio de las funciones
+```
+document.getElementById(ID);
+```
+La función `agregarAmigo();` es llamada al pulsar el botón `Añadir`. Esta fución verifica que el holder no esté vacio. Si se encuentra vacio agrega a un arreglo `amigos[]` el nombre colocado y llama a la función `actualizarLista()`.  
+La función `actualizarLista()` agrega al elemento HTML llamado `lista` al nombre agregado al arreglo `amigos[]`.  
+La función `sortearAmigo()` es llamada al presionar el botón `Sortear Amigo`. Verifica que hayan agregado al menos a 2 amigos. Esta funcion genera un numero aleatorio entero del indice del arreglo `amigos[]`. Posteriormente al amigo seleccionado lo asigna al elemento HTML llamado `resultado` para mostrar al amigo seleccionado.  
+La función `limpiar();` limpia el holder y el elemento `resultado`.
+
+## style.css
+Contiene todos los detalles del estilo, colores e imagenes de la página.
